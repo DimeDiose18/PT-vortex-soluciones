@@ -1,11 +1,11 @@
 import './App.css'
-import Hola from './components/Hola'
+import Landing from './views/Landing'
 
 function App() {
 
   return (
     <>
-      <Hola />
+      <Landing/>
     </>
   )
 }
