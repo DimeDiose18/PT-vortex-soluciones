@@ -1,12 +1,16 @@
 import './App.css'
-import Landing from './views/Landing'
+import { BrowserRouter } from 'react-router-dom'
+import Router from './views/router'
+import { ThemeProvider } from '@mui/material/styles'
+import theme from './theme.ts'
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Landing/>
-    </>
+    <BrowserRouter>
+      <ThemeProvider theme={theme}>
+        <Router />
+      </ThemeProvider>
+    </BrowserRouter>
   )
 }
 
